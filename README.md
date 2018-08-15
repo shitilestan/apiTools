@@ -33,5 +33,5 @@ after put action to variable make actions like it
 After designing the action, call those methods in the method
 
     $api->actions($action, $actions);
-After that you have to display the output
+After that you have to display the output (Response id json)
 ` $api->showResponse();`
