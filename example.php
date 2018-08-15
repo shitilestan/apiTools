@@ -1,23 +1,22 @@
 <?php
 require_once "apiTools.php";
-include "config.php";
 $api = new \apexteam\apiTools\apiTools();
 
-
-session_start();
-
-global $mysqli;
-
-$api->actions('2', [
+$action = '1';// Action Request
+$api->actions($action, [
     '1' => function ($action) {
-        global $mysqli;
-
         $response["ok"] = false;
+        //Action 1 Code
         return $response;
     },
     '2' => function ($action) {
         $response["ok"] = false;
-
+        //Action 2 Code
+        return $response;
+    },
+    '3' => function ($action) {
+        $response["ok"] = false;
+        //Action 3 Code
         return $response;
     }
 ]);
